@@ -1,0 +1,3 @@
+import {Header,Footer,WhatsApp} from '../../components/Site';import TripBuilder from '../../components/TripBuilder';
+export const metadata={title:'Build Your Own Bali Tour | Ubud Venture Travel',description:'Create a private Bali day around the places, themes, pace and budget that suit you.'};
+export default function Page(){return <><Header/><main><section className="builder-hero"><div className="container"><span className="pill">MAKE IT YOURS</span><h1>Build your Bali day.</h1><p>Choose what you love. We’ll help turn it into a route that actually makes sense.</p></div></section><div className="container"><TripBuilder/></div></main><WhatsApp/><Footer/></>}
