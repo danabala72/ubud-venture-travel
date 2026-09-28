@@ -1,0 +1,4 @@
+'use client';
+import {useRef} from 'react';
+import styles from './TourGallery.module.css';
+export default function TourGallery({gallery,theme}){const track=useRef(null);const move=(dir)=>{const el=track.current;if(!el)return;el.scrollBy({left:dir*el.clientWidth*.78,behavior:'smooth'})};return <section className={`tour-gallery container ${styles.gallery}`} aria-label="Tour photo gallery"><div className={styles.track} ref={track}>{gallery.map((g,i)=><div key={g} className={`${styles.slide} landscape theme-${theme}-${(i%5)+1}`}><span>{g}</span><b>{String(i+1).padStart(2,'0')} / {String(gallery.length).padStart(2,'0')}</b></div>)}</div><div className={styles.controls}><button onClick={()=>move(-1)} aria-label="Previous photo">←</button><button onClick={()=>move(1)} aria-label="Next photo">→</button></div></section>}
