@@ -19,6 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GITHUB_PAGES: 'true'
+      NEXT_PUBLIC_BASE_PATH: '/ubud-venture-travel'
     steps:
       - name: Checkout
         uses: actions/checkout@v4
