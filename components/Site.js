@@ -13,7 +13,7 @@ Places / itinerary I'm interested in:
 
 Could you please confirm availability and the estimated price? Thank you.`;
 const menuIconStyle={width:32,height:32,display:'block',fill:'none',stroke:'currentColor',strokeWidth:1.8,strokeLinecap:'round',strokeLinejoin:'round'};
-const menuButtonStyle={width:48,height:48,padding:0,display:'flex',alignItems:'center',justifyContent:'center',border:'0',borderRadius:0,background:'transparent',boxShadow:'none',color:'#18231f',appearance:'none',WebkitAppearance:'none'};
+const menuButtonStyle={width:48,height:48,padding:0,alignItems:'center',justifyContent:'center',border:'0',borderRadius:0,background:'transparent',boxShadow:'none',color:'#18231f',appearance:'none',WebkitAppearance:'none'};
 function trackWhatsAppClick(source='floating_button'){
   if(typeof window==='undefined') return;
   const params={link_url:'https://wa.me/'+WA_NUMBER,link_text:'WhatsApp',source,page_location:window.location.href,page_path:window.location.pathname};
